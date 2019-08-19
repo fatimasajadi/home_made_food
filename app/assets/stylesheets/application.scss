@@ -1,0 +1,51 @@
+ @import "bootstrap";
+ .jumbotron {
+    background-image: url(/assets/cover-2.jpg);
+    display: flex;
+    align-items: center;
+    height: 270px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    background-size: cover;
+    border-radius: 0 !important;
+    font-weight: bold;
+    text-align: left;
+    margin-top: -9px;
+    p { 
+    color: white;
+    }
+  }
+ 
+.food-card {
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    &, &:hover {
+        transition: 300ms transform ease;
+    }
+    
+    h4 {
+        color: white;
+        background: rgba(0,0,0,.8);
+        display: inline;
+        padding: 5px 10px;
+    }
+
+    .title {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        left: 0;
+        // background-color: blueviolet;
+        text-align: center;
+    }
+
+    img {
+        // width: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+  
