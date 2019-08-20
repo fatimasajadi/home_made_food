@@ -6,15 +6,22 @@
     height: 270px;
     color: white;
     background-repeat: no-repeat;
-    background-position: center 70%;
+    background-position: center 75%;
     background-size: cover;
     border-radius: 0 !important;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     margin-top: -9px;
     p { 
     color: white;
     }
+    a {
+        background-color: aqua;
+        position: relative;
+       
+
+    }
+    
   }
  
 .food-card {
@@ -48,4 +55,14 @@
         border-radius: 5px;
     }
 }
-  
+.foods{
+    li
+{
+list-style-type: none;
+//background-color: aqua;
+align-items: right;
+position: relative;
+left: 1250px;
+}
+
+}
