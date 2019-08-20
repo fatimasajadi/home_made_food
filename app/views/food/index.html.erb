@@ -7,30 +7,17 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-4 col-sm-12 food-card ">
-            <%= image_tag ("/assets/kabab.jpg") %>
-            <div class="title">
-                <h4>Kabab</h4>
-            </div>    
-        </div>
-        <div class="col-md-4 col-sm-12 food-card">
-            <%= image_tag ("/assets/ash.jpg") %>
-            <div class="title">
-                <h4>Soup</h4>
+        <% @categories.each do |category| %>
+            <div class="col-md-4 col-sm-12 food-card ">
+                <a href="category/<%= category.id %>">                
+                    <img src="<%= category.picture %>"/>
+
+                    <div class="title">
+                        <h4><%= category.name %></h4>
+                    </div>
+                </a>
             </div>
-        </div>
-        <div class="col-md-4 col-sm-12 food-card">
-            <%= image_tag ("/assets/zereshk.jpg") %>
-            <div class="title">
-                <h4>Stew</h4>
-            </div>
-        </div>
+        <% end %>
     </div>
 </div>
 
-<p>
-
-    <div>div1</div>
-    <div> div2</div>
-
-</p>
