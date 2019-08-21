@@ -8,3 +8,4 @@
 FoodCategory.create(name: 'Kabab', picture: '/assets/kabab.jpg')
 FoodCategory.create(name: 'Soup', picture: '/assets/ash.jpg')
 FoodCategory.create(name: 'Stew and Rice', picture: '/assets/stew.jpg')
+Food.create(name: 'Chicken Kabab', picture: '/assets/chickenkabab.jpg', price: '$16', food_category_id: '1' )

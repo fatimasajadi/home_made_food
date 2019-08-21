@@ -19,6 +19,23 @@
   </div>
 </nav>
 
+<div class="container">
+    <div class="row">
+        <% @food_item.each do |food| %>
+            <div class="col-md-4 col-sm-12 food-card ">
+                <a href="category/<%= food.id %>">                
+                    <img src="<%= food.picture %>"/>
+
+                    <div class="title">
+                        <h4><%= food.name %></h4>
+                    </div>
+                </a>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+
 
 
 
