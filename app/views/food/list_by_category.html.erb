@@ -1,45 +1,34 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="#">
     <strong>Hom<span style="color: green;font-size:130%;">y</span>!</strong>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse foods" id="navbarNav">
     <ul class="navbar-nav">
-    
       <li class="nav-item">
         <a class="nav-link" href="#">Sign Up</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Sign In</a>
       </li>
-      
     </ul>
   </div>
 </nav>
 
 <div class="container">
-    <div class="row">
-        <% @food_item.each do |food| %>
-            <div class="col-md-4 col-sm-12 food-card ">
-                <a href="category/<%= food.id %>">                
-                    <img src="<%= food.picture %>"/>
-
-                    <div class="title">
-                        <h4><%= food.name %></h4>
-                    </div>
-                </a>
-            </div>
-        <% end %>
-    </div>
+  <div class="row">
+    <% @food_item.each do |food| %>
+      <div class="col-md-4 col-sm-12 food-card-item ">
+        <img src="<%= food.picture %>" />
+        <div class="title">
+          <h4><%= food.name %></h4>
+        </div>
+        <button class="btn btn-primary">Add To Cart</button>
+        <input type="number" />
+      </div>
+    <% end %>
+  </div>
 </div>
-
-
-
-
-
-
-
-
-
